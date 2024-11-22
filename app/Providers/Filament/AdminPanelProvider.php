@@ -24,6 +24,10 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
+            ->favicon(asset('images/favicon.png'))
+            ->brandLogo(asset('images/brandlogo.png'))
+            ->brandLogoHeight('50px')
+            ->darkMode(true)
             ->sidebarCollapsibleOnDesktop()
             ->id('admin')
             ->path('admin')
